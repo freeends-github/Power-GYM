@@ -1,0 +1,14 @@
+:root{
+    --main-color: #F92524;
+    --headings-color: #181818;
+    --paragraphs-color : #7A839E;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
