@@ -233,10 +233,11 @@ h1, h2, h3, h4{
 #our-story{
     height: 100vh;
     width: 100%;
-    padding-top: 50px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
 }
 .hot-athlete-bg{
     position: absolute;
@@ -249,6 +250,7 @@ h1, h2, h3, h4{
     display: inline-block;
     margin-top: 150px;
     width: 50%;
+    height: 100%;
     position: relative;
 }
 .our-story_shumepikeshi-gri{
@@ -272,7 +274,7 @@ h3{
     font-weight: 700;
     margin-bottom: 15px;
 }
-.about-us p{
+p{
     color: var(--paragraphs-color);
     font-size: 0.8em;
     font-weight: 300;
@@ -295,5 +297,322 @@ h3{
     font-weight: 500;
     margin-bottom: 10px;
     font-size: 1.1em;
+}
+#our-classes{
+    padding-top: 50px;
+    position: relative;
+}
+#our-classes div{
+    display: flex;
+    justify-content: space-between;
+}
+#our-classes div>ul.filter-bar{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+}
+.filter-bar_item{
+    display: inline-flex;
+    position: relative;
+    color: var(--headings-color);
+    background: transparent;
+    border: none;
+}
+.active-filter{
+    /* border-bottom: 2px solid var(--main-color); */
+    color: var(--main-color);
+} 
+.filter-bar_item::after{
+    content: '';
+    position: absolute;
+    width: 130%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: -5px;
+    background-color: var(--main-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.filter-bar_item:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.filter-bar li img{
+    cursor: pointer;
+}
+/* .filter-bar li img:hover{
+    trans
+} */
+#our-classes div>ul li img{
+    height: 20px;
+    width: auto;
+}
+
+section.slider{
+    display: grid;
+    margin: 10em 0 ;
+    margin-left: calc(1 / 2 * (100% - var(--container)));
+    justify-content: space-between;
+    grid-template-columns: repeat(10, 19vw);
+    grid-template-rows: 25rem;
+    grid-column-gap: 3vh;
+} 
+.classes{
+    position: relative;
+}
+.slider-item{
+    cursor: pointer;
+}
+.slider-item:hover{
+    transform: translateY(-7%);
+    box-shadow: 0 12px 10px rgba(238,161,161,76%);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+#our-classes-bg{
+    position: absolute;
+    right: -10px;
+    z-index: -11111111111111;
+    top: -270px;
+    width: 55vw;
+    height: auto;
+}
+#slider_shumepikeshi-gri{
+    left: -2.5em;
+    bottom: -3em;
+    position: absolute;
+    width: 15em;
+    height: auto;
+    z-index: -1111;
+}
+#slider_shumepikeshi-kuq{
+    position: absolute;
+    right: 25.5em;
+    top: -5em;
+    width: 15em;
+    height: auto;
+    z-index: -1111;
+}
+.builder-man, .builder-woman{
+    position: relative;
+    border-radius: 5px;
+}
+
+.slider-item_bottom{
+    position: absolute;
+    background-color: var(--main-color);
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.slider-item_bottom h4{
+    font-weight: 400;
+    color: #fff;
+}
+.slider-item_bottom p{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.builders{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#builder-man1{
+    background-image: url(./images/bodybuilding1.png);
+}
+#builder-woman1{
+    background-image: url(./images/bodybuilding2.png);
+}
+#builder-man2{
+    background-image: url(./images/bodybuilding3.png);
+}
+#builder-woman2{
+    background-image: url(./images/bodybuilding4.png);
+}
+#builder-man3{
+    background-image: url(./images/bodybuilding5.png);
+}
+#builder-woman3{
+    background-image: url(./images/photo-of-woman-using-dumbbells-3757943.jpg);
+}
+#builder-man4{
+    background-image: url(./images/man-sitting-on-flat-bench-while-holding-two-dumbbells-3490348.jpg);
+}
+#builder-woman4{
+    background-image: url(./images/woman-wearing-white-long-sleeved-shirt-sitting-beside-green-769598.jpg);
+}
+#builder-woman5{
+    background-image: url(./images/woman-in-blue-active-wear-lifting-dumbbells-3775527.jpg);
+}
+#builder-man5{
+    background-image: url(./images/man-in-white-crew-neck-t-shirt-holding-black-dumbbell-3588479.jpg);
+}
+#builder-woman6{
+    background-image: url(./images/active-adult-biceps-body-416809.jpg);
+}
+#our-trainers{
+    margin-top: 250px;
+    padding-top: 30px;
+    position: relative;
+}
+.our--text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.our--text .red-hr{
+    margin-bottom: 2em;
+}
+.trainers-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: 24em 24em;
+}
+.trainer{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.trainer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trainer-name{
+    width: 80%;
+}
+.trainer-name h4{
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+.trainer-name .profession{
+    font-size: 0.9em;
+}
+.trainer-name hr{
+    color: var(--paragraphs-color);
+    margin: 15px 0;
+}
+.trainer-name p:last-of-type{
+    margin-bottom: 35px;
+}
+#njn-guy{
+    background-image: url(./images/njn\ guy.png);
+}
+#ilona{
+    background-image: url(./images/Gymnast.png);
+}
+#john{
+    background-image: url(./images/fitness-trainer.png);
+}
+#our-trainers > img{
+    position: absolute;
+    bottom: 24em;
+    transform: translateY(100%);
+    z-index: -111111111111111;
+    left: -14.1%;
+    right: -14.1%;
+    width: calc(100% + 2 * 14.1%);
+}
+
+#our-pricing{
+    margin-top: 450px;
+    padding-top: 50px;
+}
+/* sssssssssssssswiiii */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s;
+    border: 1px solid var(--paragraphs-color);
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.switch::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 0 2px 0 1px;
+    background-color: #16D800;
+    top: 1.5px;
+    left: 1px;
+    transition: all 0.3s;
+}
+  
+input[type='checkbox']:checked + .switch::after {
+    transform: translateX(19px);
+}  
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+#our-pricing .our--text div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.payment{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.payment-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 31%;
+    height: 35em;
+    border-radius: 10px;
+    border: 2px solid #CCCCCC;
+}
+.payment-item hr{
+    width: 70%;
+    background-color: #ccc;
+    margin: 25px 0;
+    border: 0.5px solid #ccc;
+}
+.payment-item h4{
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+.payment-item img{
+    width: 150px;
+    margin-bottom: 50px;
+}
+.payment-item h4:last-of-type{
+    margin: 5px 0 80px 0;
+}
+.special-payment{
+    border: 3px solid var(--main-color);
+}
+.grey-button{
+    background: transparent;
+    border: 1px solid #000;
+    color: var(--paragraphs-color);
+}
+.grey-button:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
 }
 

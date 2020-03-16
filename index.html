@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POWER</title>
     <link rel="icon" href="./images/head_logo.png" />
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="./script.js" defer></script>
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <style>
       @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
     </style>
-    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header>
@@ -19,9 +22,9 @@
                 <ul>
                     <li><a class="nav-bar--item" id="active-nav--item" href="">Home</a></li>
                     <li><a class="nav-bar--item" href="#our-story">about us</a></li>
-                    <li><a class="nav-bar--item" href="">our classes</a></li>
-                    <li><a class="nav-bar--item" href="">our trainers</a></li>
-                    <li><a class="nav-bar--item" href="">our pricing</a></li>
+                    <li><a class="nav-bar--item" href="#our-classes">our classes</a></li>
+                    <li><a class="nav-bar--item" href="#our-trainers">our trainers</a></li>
+                    <li><a class="nav-bar--item" href="#our-pricing">our pricing</a></li>
                     <li><button class="red-button">contact us</button></li>
                 </ul>
             </nav>
@@ -74,6 +77,180 @@
                 </div>
             </div>
         </div>
+        <div id="our-classes">
+            <div>
+                <h3>Our Classes</h3>
+                <ul class="filter-bar">
+                    <li><button data-filter="all" id="showall" class="filter-bar_item active-filter viewall">All</button></li>
+                    <li><button data-filter="men" id="showmen" class="filter-bar_item">Men</button></li>
+                    <li><button data-filter="women" id="showwomen" class="filter-bar_item">Women</button></li>
+                    <li><img src="./images/arrow-left.png" alt=""></li>
+                    <li><img src="./images/arrow-right.png" alt=""></li>
+                </ul>
+            </div>
+            <hr class="red-hr">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
     </main>
+    <section class="slider classes">
+        <div data-category="man" class="slider-item builder-man builders" id="builder-man1">
+            <div class="slider-item_bottom">
+                <h4>Body Building</h4>
+                <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
+            </div>
+        </div>
+        <div data-category="woman" class="slider-item builder-woman builders" id="builder-woman1">
+            <div class="slider-item_bottom">
+                <h4>Body Building</h4>
+                <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
+            </div>
+        </div>
+        <div data-category="man" class="slider-item builder-man builders" id="builder-man2">
+            <div class="slider-item_bottom">
+                <h4>Body Building</h4>
+                <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
+            </div>
+        </div>
+        <div data-category="woman" class="slider-item builder-woman builders" id="builder-woman2">
+            <div class="slider-item_bottom">
+                <h4>Body Building</h4>
+                <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
+            </div>
+        </div>
+        <div data-category="man" class="slider-item builder-woman builders" id="builder-man3">
+            <div class="slider-item_bottom">
+                <h4>Body Building</h4>
+                <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
+            </div>
+        </div>
+        <div data-category="man" class="slider-item builder-man builders" id="builder-man4">
+            <div class="slider-item_bottom">
+                <h4>Body Building</h4>
+                <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
+            </div>
+        </div>
+        <div data-category="woman" class="slider-item builder-woman builders" id="builder-woman4">
+            <div class="slider-item_bottom">
+                <h4>Body Building</h4>
+                <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
+            </div>
+        </div>
+        <div data-category="woman" class="slider-item builder-woman builders" id="builder-woman5">
+            <div class="slider-item_bottom">
+                <h4>Body Building</h4>
+                <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
+            </div>
+        </div>
+        <div data-category="woman" class="slider-item builder-woman builders" id="builder-woman6">
+            <div class="slider-item_bottom">
+                <h4>Body Building</h4>
+                <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
+            </div>
+        </div>
+        <div data-category="man" class="slider-item builder-man builders" id="builder-man5">
+            <div class="slider-item_bottom">
+                <h4>Body Building</h4>
+                <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
+            </div>
+        </div>
+        <img src="./images/bodybuilding-bg.png" id="our-classes-bg" alt="">
+        <img src="./images/Group 1486@2x.png" id="slider_shumepikeshi-gri" alt="">
+        <img src="./images/shumepikeshi-kuq.png" id="slider_shumepikeshi-kuq" alt="">
+    </section>
+    <main>
+        <div id="our-trainers">
+            <div class="our--text">
+                <h3>Our Trainers</h3>
+                <hr class="red-hr">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+            <div class="trainers-container">
+                <div id="njn-guy" class="trainer-item trainer"></div>
+                <div class="trainer-item">
+                    <div class="trainer-name">
+                        <h4>AMARYAN JACKSON</h4>
+                        <p class="profession">Body Builder</p>
+                        <hr>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit  quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <div class="icons">
+                            <i class="fa fa-facebook lg" style="font-size: 1.2em; margin-right: 0.5em;" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus lg" style="font-size: 1.2em; color: red; margin-right: 0.5em;" aria-hidden="true"></i>
+                            <i class="fa fa-twitter lg" style="font-size: 1.2em; margin-right: 0.5em;"  aria-hidden="true"></i>  
+                            <i class="fa fa-instagram lg" style="font-size: 1.2em; margin-right: 0.5em;" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="john" class="trainer-item trainer"></div>
+                <div class="trainer-item">
+                    <div class="trainer-name">
+                        <h4>ILONA JEKLIN</h4>
+                        <p class="profession">Gymnast</p>
+                        <hr>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit  quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <div class="icons">
+                            <i class="fa fa-facebook lg" style="font-size: 1.2em; margin-right: 0.5em;" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus lg" style="font-size: 1.2em; margin-right: 0.5em;" aria-hidden="true"></i>
+                            <i class="fa fa-twitter lg" style="font-size: 1.2em; margin-right: 0.5em;"  aria-hidden="true"></i>  
+                            <i class="fa fa-instagram lg" style="font-size: 1.2em; margin-right: 0.5em;" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="ilona" class="trainer-item trainer"></div>
+                <div class="trainer-item">
+                    <div class="trainer-name">
+                        <h4>John Doe</h4>
+                        <p class="profession">Body Builder</p>
+                        <hr>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit  quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <div class="icons">
+                            <i class="fa fa-facebook lg" style="font-size: 1.2em; margin-right: 0.5em;" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus lg" style="font-size: 1.2em; margin-right: 0.5em;" aria-hidden="true"></i>
+                            <i class="fa fa-twitter lg" style="font-size: 1.2em; margin-right: 0.5em;"  aria-hidden="true"></i>  
+                            <i class="fa fa-instagram lg" style="font-size: 1.2em; margin-right: 0.5em;" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/trainers-bg.png" alt="">
+        </div>
+        <div id="our-pricing">
+            <div class="our--text">
+                <h3>Our Pricing</h3>
+                <hr class="red-hr">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <div><span>Annual Plan</span><span><input type="checkbox" id="toggle" class="offscreen" /> <label for="toggle" class="switch"></label></span><span>Monthly Plan</span></div>
+            </div>
+            <div class="payment">
+                <div class="payment-item">
+                    <img src="./images/grey-weights.png" alt="">
+                    <h4>Basic Plan</h4>
+                    <p>Sed ut perspiciatis unde</p>
+                    <p>natus error sit  quae ab illo inventor</p>
+                    <hr>
+                    <h4>$340/Month</h4>
+                    <button class="grey-button red-button">Get Started</button>
+                </div>
+                <div class="payment-item special-payment">
+                    <img src="./images/red-weights.png" alt="">
+                    <h4>Professional Plan</h4>
+                    <p>Sed ut perspiciatis unde</p>
+                    <p>natus error sit  quae ab illo inventor</p>
+                    <hr>
+                    <h4>$340/Month</h4>
+                    <button class="red-button">Get Started</button>
+                </div>
+                <div class="payment-item">
+                    <img src="./images/grey-weights.png" alt="">
+                    <h4>Basic Plan</h4>
+                    <p>Sed ut perspiciatis unde</p>
+                    <p>natus error sit  quae ab illo inventor</p>
+                    <hr>
+                    <h4>$340/Month</h4>
+                    <button class="grey-button red-button">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </body>
 </html>
