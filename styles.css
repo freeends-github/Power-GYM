@@ -349,6 +349,62 @@ p{
     height: 20px;
     width: auto;
 }
+.backdrop{
+    display: none;
+    position: fixed;
+    z-index: 111111111;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--paragraphs-color);
+    opacity: 75%;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000000000000000;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 20%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.modal_title{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.modal_actions{
+    text-align: center;
+}
+.modal_action{
+    border: 2px solid var(--paragraphs-color);
+    background: var(--paragraphs-color);
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal_action:hover,
+.modal_action:active{
+    background: var(--main-color);
+    border-color: var(--main-color);
+    color: white;
+}
+.modal_action--negative{
+    border-width: 1.5px;
+    background: transparent;
+    border-color: var(--paragraphs-color);
+    color: var(--headings-color);
+}
+
 
 section.slider{
     display: grid;
