@@ -77,15 +77,15 @@
                 </div>
             </div>
         </div>
-        <div id="our-classes">
+        <div id="our-classes" class="slider-controller">
             <div>
                 <h3>Our Classes</h3>
                 <ul class="filter-bar">
                     <li><button data-filter="all" id="showall" class="filter-bar_item active-filter viewall">All</button></li>
                     <li><button data-filter="men" id="showmen" class="filter-bar_item">Men</button></li>
                     <li><button data-filter="women" id="showwomen" class="filter-bar_item">Women</button></li>
-                    <li><img  src="./images/arrow-left.png" alt=""></li>
-                    <li><img src="./images/arrow-right.png" alt=""></li>
+                    <li><img id="filter_arrow-left" src="./images/arrow-left.png" alt=""></li>
+                    <li><img id="filter_arrow-right" src="./images/arrow-right.png" alt=""></li>
                 </ul>
             </div>
             <hr class="red-hr">
@@ -258,7 +258,146 @@
                 </div>
             </div>
         </div>
+        <div id="testimonials" class="slider-controller">
+            <div>
+                <h3>What people say about us?</h3>
+                <ul class="filter-bar">
+                    <li><img id="testimonial_arrow-left" src="./images/arrow-left.png" alt=""></li>
+                    <li><img id="testimonial_arrow-right" src="./images/arrow-right.png" alt=""></li>
+                </ul>
+            </div>
+            <hr class="red-hr">
+            <p>Sed ut perspiciatis unde omnis  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
     </main>
+    <section class="slider testimonial-slider">
+        <div class="testimonial_item">
+            <img src="images/testimonial1.png" alt="">
+            <div class="stars">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+            </div>
+            <p>Sed ut perspiciatis unde omnis  accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+            <div class="testimonial_item--info">
+                <div>
+                    <h4>Christopher Doe</h4>
+                    <p>Orlando, Florida</p>
+                </div>
+                <img src="./images/quotes.png" alt="quotes">
+            </div>
+        </div>
+        <div class="testimonial_item">
+            <img src="./images/testimonial2.png" alt="">
+            <div class="stars">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+            </div>
+            <p>Sed ut perspiciatis unde omnis  accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+            <div class="testimonial_item--info">
+                <div>
+                    <h4>Sara James</h4>
+                    <p>Orlando, Florida</p>
+                </div>
+                <img src="./images/quotes.png" alt="quotes">
+            </div>
+        </div>
+        <div class="testimonial_item">
+            <img src="./images/testimonial3.png" alt="">
+            <div class="stars">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+            </div>
+            <p>Sed ut perspiciatis unde omnis  accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+            <div class="testimonial_item--info">
+                <div>
+                    <h4>Janee SMITH</h4>
+                    <p>Orlando, Florida</p>
+                </div>
+                <img src="./images/quotes.png" alt="quotes">
+            </div>
+        </div>
+        <div class="testimonial_item">
+            <img src="" alt="">
+            <div class="stars">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+            </div>
+            <p>Sed ut perspiciatis unde omnis  accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+            <div class="testimonial_item--info">
+                <div>
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <img src="./images/quotes.png" alt="quotes">
+            </div>
+            
+        </div>
+        <div class="testimonial_item">
+            <img src="" alt="">
+            <div class="stars">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+                <img src="./images/star@2x.png" alt="">
+            </div>
+            <p>Sed ut perspiciatis unde omnis  accusantium doloremque laudantium totam rem aperiam, eaque ipsa.</p>
+            <div class="testimonial_item--info">
+                <div>
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <img src="./images/quotes.png" alt="quotes">
+            </div>
+        </div>
+        <img id="testimonial-shumepikeshi" src="./images/shumepikeshi-gri.png" alt="">
+        <img id="testimonial-bg" src="./images/testimonial-bg.png" alt="">
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="logo-div-footer">
+                    <div id="footer-logo"><img src="./images/foot_logo.png" alt="logo"></div>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <div class="social-div_footer">
+                        <i class="fa fa-facebook lg" style="font-size: 1.2em; color: white; margin-right: 0.5em;" aria-hidden="true"></i>
+                        <i class="fa fa-google-plus lg" style="font-size: 1.2em; color: white; margin-right: 0.5em;" aria-hidden="true"></i>
+                        <i class="fa fa-twitter lg" style="font-size: 1.2em; color: white; margin-right: 0.5em;"  aria-hidden="true"></i>  
+                        <i class="fa fa-instagram lg" style="font-size: 1.2em; color: white; margin-right: 0.5em;" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="foots-info">
+                    <div id="getInTouch">
+                        <h2 style="color: white; margin: 15px 0 20px 0; font-size: 2em; ">Get in touch</h2>
+                        <hr class="red-hr" style="height: 4px;background-color: white;">
+                    </div>
+                    <div id="foots-info">
+                        <div class="fi-div">
+                            <h4>Address</h4>
+                            <p style="width: 85%;"><img src="./images/location-fill@2x.png" alt="">123 Madison Street New York City, NY 10001.</p>
+
+                        </div>
+                        <div class="fi-div"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bott-footer">
+                <p style="color:white">Copyright &copy; 2019, GYM. All rights reserved </p>
+            </div>
+            <img id="foot-bg--shape" src="./images/footer-bg-shape.png" alt="footer background shape">
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </body>
 </html>
