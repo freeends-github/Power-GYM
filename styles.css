@@ -415,6 +415,9 @@ section.slider{
     grid-template-rows: 25rem;
     grid-column-gap: 2vw;
 }
+/* #area1{
+    grid-area: area;
+} */
 .classes{
     position: relative;
 }
@@ -480,37 +483,37 @@ section.slider{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#builder-man1{
+.builder-man1{
     background-image: url(./images/bodybuilding1.png);
 }
-#builder-woman1{
+.builder-woman1{
     background-image: url(./images/bodybuilding2.png);
 }
-#builder-man2{
+.builder-man2{
     background-image: url(./images/bodybuilding3.png);
 }
-#builder-woman2{
+.builder-woman2{
     background-image: url(./images/bodybuilding4.png);
 }
-#builder-man3{
+.builder-man3{
     background-image: url(./images/bodybuilding5.png);
 }
-#builder-woman3{
+.builder-woman3{
     background-image: url(./images/photo-of-woman-using-dumbbells-3757943.jpg);
 }
-#builder-man4{
+.builder-man4{
     background-image: url(./images/man-sitting-on-flat-bench-while-holding-two-dumbbells-3490348.jpg);
 }
-#builder-woman4{
+.builder-woman4{
     background-image: url(./images/woman-wearing-white-long-sleeved-shirt-sitting-beside-green-769598.jpg);
 }
-#builder-woman5{
+.builder-woman5{
     background-image: url(./images/woman-in-blue-active-wear-lifting-dumbbells-3775527.jpg);
 }
-#builder-man5{
+.builder-man5{
     background-image: url(./images/man-in-white-crew-neck-t-shirt-holding-black-dumbbell-3588479.jpg);
 }
-#builder-woman6{
+.builder-woman6{
     background-image: url(./images/active-adult-biceps-body-416809.jpg);
 }
 #our-trainers{
@@ -786,7 +789,19 @@ footer{
 #getInTouch{
     width: 100%;
 }
-
+#foots-info{
+    display: flex;
+}
+.fi-div h4{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 500;
+}
+.fi-div p{
+    color: white;
+    margin-bottom: 10px;
+}
 
 .bott-footer{
     margin-top: 3em;

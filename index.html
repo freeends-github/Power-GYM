@@ -92,70 +92,62 @@
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
     </main>
-    <div class="backdrop"></div>
-    <div class="modal">
-        <h1 class="modal_title">Do you want to continue?</h1>
-        <div class="modal_actions">
-            <a href="" class="modal_action">Yes!</a>
-            <button class="modal_action modal_action--negative" type="button">No!</button>
-        </div>
-    </div>
-    <section class="slider classes">
-        <div data-category="man" class="slider-item builder-man builders" id="builder-man1">
+    <section id="filter-slider" class="slider classes">
+        <div data-category="man" class="slider-item builder-man builders builder-man1" id="">
             <div class="slider-item_bottom">
                 <h4>Body Building</h4>
                 <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
             </div>
         </div>
-        <div data-category="woman" class="slider-item builder-woman builders" id="builder-woman1">
+        <div data-category="woman" class="slider-item builder-woman builders builder-woman1" id="">
             <div class="slider-item_bottom">
                 <h4>Body Building</h4>
                 <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
             </div>
         </div>
-        <div data-category="man" class="slider-item builder-man builders" id="builder-man2">
+        <div data-category="man" class="slider-item builder-man builders builder-man2" id="">
             <div class="slider-item_bottom">
                 <h4>Body Building</h4>
                 <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
             </div>
         </div>
-        <div data-category="woman" class="slider-item builder-woman builders" id="builder-woman2">
+        <div data-category="woman" class="slider-item builder-woman builders builder-woman2" id="">
             <div class="slider-item_bottom">
                 <h4>Body Building</h4>
                 <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
             </div>
         </div>
-        <div data-category="man" class="slider-item builder-woman builders" id="builder-man3">
+        <div data-category="man" class="slider-item builder-man builders builder-man3" id="">
             <div class="slider-item_bottom">
                 <h4>Body Building</h4>
                 <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
             </div>
         </div>
-        <div data-category="man" class="slider-item builder-man builders" id="builder-man4">
+        <div data-category="man" class="slider-item builder-man builders builder-man4" id="">
             <div class="slider-item_bottom">
                 <h4>Body Building</h4>
                 <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
             </div>
         </div>
-        <div data-category="woman" class="slider-item builder-woman builders" id="builder-woman4">
+        <div data-category="woman" class="slider-item builder-woman builders builder-woman4" id="">
             <div class="slider-item_bottom">
                 <h4>Body Building</h4>
                 <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
             </div>
         </div>
-        <div data-category="woman" class="slider-item builder-woman builders" id="builder-woman5">
+        <div data-category="woman" class="slider-item builder-woman builders builder-woman5" id="">
             <div class="slider-item_bottom">
                 <h4>Body Building</h4>
                 <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
             </div>
         </div>
-        <div data-category="woman" class="slider-item builder-woman builders" id="builder-woman6">
+        <div data-category="woman" class="slider-item builder-woman builders builder-woman6" id="">
             <div class="slider-item_bottom">
                 <h4>Body Building</h4>
                 <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
             </div>
         </div>
-        <div data-category="man" class="slider-item builder-man builders" id="builder-man5">
+        <div data-category="man" class="slider-item builder-man builders builder-man5" id="">
             <div class="slider-item_bottom">
                 <h4>Body Building</h4>
                 <p><span><img src="./images/clock@2x.png" alt=""></span>Mon-Fri | 9.00 - 10.00</p>
@@ -270,6 +262,14 @@
             <p>Sed ut perspiciatis unde omnis  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
     </main>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <h1 class="modal_title">Do you want to continue?</h1>
+        <div class="modal_actions">
+            <a href="" class="modal_action">Yes!</a>
+            <button class="modal_action modal_action--negative" type="button">No!</button>
+        </div>
+    </div>
     <section class="slider testimonial-slider">
         <div class="testimonial_item">
             <img src="images/testimonial1.png" alt="">
@@ -381,15 +381,19 @@
                 <div class="foots-info">
                     <div id="getInTouch">
                         <h2 style="color: white; margin: 15px 0 20px 0; font-size: 2em; ">Get in touch</h2>
-                        <hr class="red-hr" style="height: 4px;background-color: white;">
+                        <hr class="red-hr" style="height: 4px;background-color: white; margin-bottom: 10px;">
                     </div>
                     <div id="foots-info">
                         <div class="fi-div">
                             <h4>Address</h4>
                             <p style="width: 85%;"><img src="./images/location-fill@2x.png" alt="">123 Madison Street New York City, NY 10001.</p>
-
+                            <p><span><img src="./images/clock@2x.png" alt=""></span>Mon - Fri 08:00 AM - 09:00 PM</p>
                         </div>
-                        <div class="fi-div"></div>
+                        <div class="fi-div">
+                            <h4>contact info</h4>
+                            <p><img src="./images/message-fill.png" alt=""> info@gym.com</p>
+                            <p><img src="./images/phone-fill@2x.png" alt=""> +1 234 567 8910</p>
+                        </div>
                     </div>
                 </div>
             </div>
