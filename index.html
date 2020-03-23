@@ -56,10 +56,12 @@
 				<img src="./images/Group 1105.png" alt="" class="story_dots">
 			</div>
 			<div class="story_info">
-				<h1>Our Story</h1>
-				<nav class="line_red"></nav>
-				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-				<p> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				<div class="story_info1">
+					<h1>Our Story</h1>
+					<nav class="line_red"></nav>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					<p> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				</div>
 				<nav class="story-items_container">
 					<div class="story-items">
 						<nav class="story-items_img"><img src="./images/Group 1707.png" alt=""></nav>
@@ -163,7 +165,7 @@
 			<div class="trainers_container">
 				<div>
 						<img src="./images/123.png" alt="">
-						<div class="trainers_info">
+						<div class="trainers_info trainers_info1">
 							<h2>AMARYAN JACKSON</h2>
 							<h3>Body Builder</h3>
 							<nav class="line_grey"></nav>
@@ -176,7 +178,7 @@
 							</nav>
 						</div>
 						<img src="./images/1122.png" alt="">
-						<div class="trainers_info">
+						<div class="trainers_info trainers_info2">
 							<h2>ILONA JEKLIN</h2>
 							<h3>Gymnast</h3>
 							<nav class="line_grey"></nav>
@@ -189,7 +191,7 @@
 							</nav>
 						</div>
 						<img src="./images/333333.png" alt="">
-						<div class="trainers_info">
+						<div class="trainers_info trainers_info3">
 							<h2>John Doe</h2>
 							<h3>Gymnast</h3>
 							<nav class="line_grey"></nav>
@@ -437,9 +439,29 @@
 					slidesToScroll: 1,
 					infinity:true,
 					prevArrow:$('.classes_prev'),
-					nextArrow:$('.classes_next')
+					nextArrow:$('.classes_next'),
+					responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 				});
-   		 });
 	</script>
 </body>
 </html>
