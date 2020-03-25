@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 	cursor: default;
 }
+body{
+	overflow-x:hidden;
+}
 li{
 	list-style:none;
 }
@@ -13,6 +16,40 @@ a{
 }
 button{
 	cursor:pointer;
+}
+.list_pop{
+	position:fixed;
+	width:100%;
+	height:0vh;
+	background-color:rgba(0,0,0,0.9);
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	z-index : 8;
+	transition: width 1s ease-in;
+}
+.list_pop ul{
+	display: none;
+}
+.list_pop ul li{
+	list-style:none;
+	margin-top:20px;
+	text-align:center;
+}
+.list_pop ul li a{
+	text-decoration: none;
+	font: 700 18px/30px Poppins;
+	color:#F92524;
+	cursor:pointer;
+}
+.list_pop i{
+	position:absolute;
+	top:10%;
+	right:10%;
+	font-size:30px;
+	color:#F92524;
+	cursor:pointer;
+	display:none;
 }
 .top_circle {
     position: absolute;
@@ -46,6 +83,11 @@ header{
 .list_container{
 	display: flex;
 	justify-content:flex-end;
+}
+.list_container i{
+	display:none;
+	font-size:25px;
+	color:#F92524;
 }
 .list_container ul{
 	display: flex;
@@ -404,6 +446,20 @@ main{
 .classes_items>img{
 	width:100%;
 	height:100%;
+}
+.classes_items i{
+	position:absolute;
+	top:5%;
+	right:7%;
+	color:white;
+	display:none
+}
+.appair{
+	display:block !important;
+}
+.rotate{
+	transform: rotateZ(180deg);
+	transition:transform 500ms ease-in;
 }
 .classes-slider_info{
 	padding:20px 10px 20px 30px;
@@ -851,7 +907,8 @@ main{
 	padding-bottom:83px;
 }
 .people_items{
-	/* width:563px !important; */
+	width:563px !important;
+	height:380px !important;
 	display: inline-block;
 	background-color:white;
 	border-radius: 10px;
@@ -1045,13 +1102,19 @@ footer>div{
 		bottom: 15%;
 	}
 	.people_img2 {
-		width: 46%;
+		width:37%;
 	}
 	.price_items {
 		padding: 70px 50px 75px 50px;
 	}
 	.price_items button{
 		margin-top:75px;
+	}
+}
+@media only screen and (max-width:1380px){
+	.people_items{
+		width: 473px !important;
+    	height: 363px !important;
 	}
 }
 @media only screen and (max-width:1300px){
@@ -1383,8 +1446,21 @@ footer>div{
 	.people_paragraph p {
 		font: 300 15px/25px Poppins
 	}
+	.people_items {
+		width: 421px !important;
+		height: 363px !important;
+	}
 }
 @media only screen and (max-width:870px){
+	.top_circle {
+		position: absolute;
+		top: -33%;
+		left: -7%;
+		width: 50%;
+	}
+	header{
+		width:95%;
+	}
 	.list_container ul li {
 		margin-right: 10px;
 	}
@@ -1539,5 +1615,268 @@ footer>div{
 		width: 95%;
 		margin:auto;
 		margin-top:20px;
+	}
+	.footer_contact h1 {
+    	font: 700 28px/50px Poppins;
+	}
+	.contact_info a {
+		font: 300 15px/28px Poppins;
+		margin-left: 12px;
+	}
+	.copyright_part {
+		padding: 15px;
+	}
+	.copyright_part p {
+		font: 300 14px/25px Poppins;
+	}
+	.trainers_section {
+		padding-bottom: 91px;
+		margin-top:69px;
+	}
+	.people_items {
+		width: 378px !important;
+		height: 363px !important;
+	}
+	.people_items p {
+    	margin-top: 40px;
+    	font: 300 14px/29px Poppins;
+	}
+}
+@media only screen and (max-width:735px){
+	.classes_slider{
+		margin-top:80px;
+	}
+	.classes_items {
+		width: 208px !important;
+		height: 322px !important;
+	}
+	.classes-slider_info h2 {
+		font: 500 15px/30px Poppins;
+	}
+	.classes-slider_info p {
+		font: 300 13px/50px Poppins;
+	}
+}
+@media only screen and (max-width:700px){
+	.classes_items {
+		width: 180px !important;
+		height: 280px !important;
+	}
+	.classes-slider_info {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(249, 37, 36,0.9);
+		display: none;
+		padding-top:50%;
+	}
+	.classes-slider_info p{
+		display: block;
+		margin-left:0px;
+	}
+	.classes_items i{
+		display:block;
+	}
+		.people_items {
+			width: 8% !important;
+			height: 363px !important;
+			margin-left:15px;
+		}
+}
+@media only screen and (max-width:680px){
+	.top_circle {
+		position: absolute;
+		top: -24%;
+		left: -7%;
+		width: 50%;
+	}
+	header{
+		width:90%;
+		margin-top:0;
+	}
+	.list_container{
+		width:100%;
+		justify-content: space-between;
+		align-items:center;
+	}
+	.list_container i{
+		display:block;
+	}
+	.list_container ul{
+		display:none;
+	}
+	.join_section{
+		width:90%;
+		flex-flow:column-reverse;
+		margin:auto;
+		margin-top:30px;
+	}
+	.join_imgs{
+		position:relative;
+		width:50%;
+	}
+	.join_info{
+		margin-top:20px;
+		width:100%;
+	}
+	.join_info p {
+		font: 300 14px/28px Poppins;
+	}
+	.story-items_info h2 {
+		font: 500 17px/50px Poppins;
+	}
+	.story_info p {
+		font: 300 12.5px/25px Poppins;
+		margin-top: 6px;
+	}
+	.classes-list_container{
+		flex-flow:column;
+	}
+	.classes-list_container ul li {
+		margin: 0 8px;
+	}
+	.classes-list_container ul li a {
+		padding:0 8px;
+		font: 500 14px/50px Poppins;
+	}
+	.classes_header .line_red {
+		margin:auto;
+		margin-top: 14px;
+	}
+	.trainers_container>div {
+		grid-template-columns:1fr;
+		grid-template-rows: repeat(6,auto);
+		width: 90%;
+	}
+	.trainers_container>div img{
+		margin-top:30px;
+	}
+	.trainers_info2 {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		margin-bottom:30px;
+		border:1px solid black;
+		border-top:none;
+		padding:10px;
+	}
+	.trainers_info1 {
+		grid-column: 1/2;
+		grid-row: 4/5;
+		margin-bottom:30px;
+		border:1px solid black;
+		border-top:none;
+		padding:10px;
+	}
+	.trainers_info3 {
+		grid-column: 1/2;
+		grid-row:6/7;
+		margin-bottom:30px;
+		border:1px solid black;
+		border-top:none;
+		padding:10px;
+	}
+	.people_header{
+		flex-flow:column;
+	}
+	.people_arrows i {
+		font-size:50px;
+	}
+	.people_intro .line_red {
+		margin:auto;
+   	 	margin-top: 16px;
+	}
+	.people_paragraph {
+		width:100%;
+		margin-top: 15px;
+	}
+	.people_paragraph p {
+		font: 300 14px/25px Poppins;
+	}
+	.footer_contact h1{
+		text-align:center;
+	}
+	.line_white{
+		margin:auto;
+		margin-top:15px;
+	}
+	.contact_info{
+		flex-flow:column;
+	}
+	.contact_info>nav{
+		width:99%;
+		margin:auto;
+		display:flex;
+		flex-flow:column;
+		align-items:center;
+	}
+	.join_info{
+		align-items: center;
+	}
+	.story_info1{
+		display:flex;
+		flex-flow:column;
+		align-items: center;
+		left:0;
+	}
+	.story_section{
+		flex-flow:column-reverse;
+		align-items: flex-start;
+		width:90%;
+		margin:auto;
+		margin-top:40px;
+	}
+	.story_info{
+		width:100%;
+		margin-top:20px;
+	}
+	.story_imgs{
+		margin:20px auto 0 auto ;
+	}
+	.story-items {
+		margin-top: 35px;
+	}
+	.trainers_container {
+		margin-top: 60px;
+	}
+	.price_section {
+		margin-top:0;
+	}
+}
+@media only screen and (max-width:630px){
+	.classes_items {
+		width: 142px !important;
+		height: 235px !important;
+	}
+}
+@media only screen and (max-width:512px){
+	.story_section{
+		padding-top:240px;
+	}
+	.price_items {
+   		width: 80%;
+	}
+	.price_items>div img {
+		width: 100%;
+		margin: auto;
+	}
+	.price_items h1 {
+		font: 700 20px/50px Poppins;
+	}
+	.price_items p {
+		font: 300 14px/28px Poppins;
+	}
+	.price_items h2 {
+		font: 700 21px/50px Poppins;
+	}
+	.price_items button {
+		font: 300 18px/30px Poppins;
+		padding: 12px 27px;
+		margin-top: 50px;
+	}
+	.people_items{
+		width:10.6% !important;
+	}
+	.people_items p {
+		margin-top: 40px;
+		font: 300 13px/29px Poppins;
 	}
 }
