@@ -6,10 +6,12 @@ body
     color: black;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+
 }
 .container{
     width: 80%;
     margin: 0 auto;
+    overflow: hidden !important;
 }
 p{
     color: #7A839E;
@@ -66,22 +68,21 @@ header li{
 }
   
 /* ******************************** */
-.toggler{
-    height: 40px;
-    background: white;
-    outline: none;
+header .toggler {
     border: none;
-    cursor: pointer;
-    float: right;
+    outline: none;
+    width: 30px;
+    height: 26px;
+    padding: 0;
     display: none;
-    margin-bottom: 30px;
+    cursor: pointer;
 }
 .toggler >span {
     display:block;
     margin-bottom: 5px;
     background: #000;
     height: 5px;
-    width: 20px;
+    width: 30px;
    
 }
 /* ****************************************** */
@@ -317,32 +318,53 @@ justify-content: space-between;
     width: 60%;
     margin-left: 10%;
 }
-/* .section3::after{
+.our-classes-content::before{
     content: "";
-    background: url("./images/Path\ 3766@2x.png");
-    background-size:contain ;
+    background: url("./images/Group\ 1494@2x.png");
+    background-size:cover ;
     background-repeat: no-repeat;
     position: absolute;
-    top: 50%;
+    bottom: -15%;
+    left: -5%;
+    width: 15%;
+    height: 50%;
+    z-index: -6666;
+}
+.our-classes-content::after{
+    content: "";
+    background: url("./images/Path\ 3766@2x.png");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -70%;
     right: 0em;
-    width: 30%;
-    height: 30%;
-} */
+    width: 73%;
+    height:160%;
+    z-index: -44444;
+}
 .our-classes-content{
     display: flex;
     justify-content: space-between;
-    margin: 150px 0;
+    margin:100px 0;
     margin-left: 10%;
+    margin-right: -15%;
+    position: relative;
+}
+.our-classes-nav button{
+    background: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 .our-class-content:hover{
     margin-top: -20px;
 }
 .our-class-content {
 width: 360px;
-height: 300px;
-display: flex;
+height: 350px !important;
+display: flex !important;
 flex-direction: column;
-justify-content: flex-end;
+justify-content: flex-end !important;
 color: white;
 margin-right: 15px;
 }
@@ -356,6 +378,11 @@ margin-right: 15px;
     background-color: #F92524;
     margin: 0;
     padding:5px 10px ;
+}
+.our-class-content h5 img{
+    display: inline-block;
+    margin-right: 5px;
+
 }
 .our-class-1{
     background: url("./images/class1@2x.png");
@@ -536,6 +563,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
     height: 18px;
     margin-right: 5px;
     margin-bottom: 15px;
+    display: inline-block !important;
 }
 .testimonials-content h3{
     font-size: 20px;
@@ -601,14 +629,39 @@ footer p{
     margin-right: 5px;
 }
 @media screen and (max-width: 1024px) {
-    header .toggler {
-      display: inline;
-        opacity: 1;
-        z-index: 99999999999999999999 !important;
+  header .nav-links{
+    display: none;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    background: rgba(249,37,36,0.7);
+    color: white;
+    z-index: 9999999999;
+    border-radius: 5px;
+    
     }
-    header ul{
-        display: none;
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
     }
+    .nav-links ul li a{
+        color: white;
+        margin-left: 0;
+        
+    }
+    .contact-us{
+        margin-right: 15px;
+        color:#F92524 !important;
+        background: white;
+    }
+    .nav-links ul li a:hover{
+        border-bottom: white 2px solid;
+        
+    }
+   header .toggler{
+    display: inline-block !important;
+     }
+   
     .section1_text{
         margin-top: 50px;
     }
@@ -628,11 +681,8 @@ footer p{
     font-size: 15px;
     }
     .our-story-content-item{
-    display: flex;
-   }
-    .section4{
-        margin-bottom: 100px;
-    }
+    display: flex;}
+   
     .section2::before{
         height: 100%;
         width: 100%;
@@ -652,7 +702,7 @@ footer p{
             margin: auto;
         }
 
-}
+    }
 @media screen and (max-width: 768px){
     .our-trainers-content{
         grid-template-columns: repeat(2,1fr);
@@ -665,14 +715,17 @@ footer p{
     .section2-flex img{
         width: 80%;
     }
+    .our-story-img::after{
+        display: none;
+    }
     .section2-flex .our-story-content{
         width: 80%;
         margin: auto;
     }
     .section2::before{
         height: 70%;
-        width: 70%;
-        margin-top: -10%;
+        width: 80%;
+        margin-top: 20%;
         margin-left: -1%;}
         .section1_text p{
             line-height: 17px;
@@ -701,5 +754,14 @@ footer p{
         }
         .power-social-media>img{
             height:50px;
+        }
+        .section3 p{
+            width: 80%;
+            line-height: 17px;
+        font-size: 15px;
+        }
+        .our-classes-nav a{
+            margin-left:5px;
+            font-size: 13px;
         }
 }

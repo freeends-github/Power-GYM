@@ -21,6 +21,14 @@
 
 
   $(document).ready(function(){
+    $(".toggler").on("click", function() {
+      if($(".nav-links").css("display") == "none") {
+        $(".nav-links").css("display", "block");
+      }
+      else{
+        $(".nav-links").css("display", "none");
+      }
+    });
 
     $(".onclick-btn").on("click", function() {
       if($("#monthly").css("display") == "none") {
@@ -36,42 +44,82 @@
     });
 
     $('.our-classes-content').slick({
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: true,
         autoplaySpeed: 2000,
-             });
-  });
-
-
-//   $('.our-classes-content').slick({
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//          });
-
-
-
-         $(".toggler").on("click", function() {
-            $(this).toggleClass("open");
-            $("body").toggleClass("navbar-open");
-        });
-        $(".nav-links a").on("click", function() {
-            if($("body").hasClass("navbar-open")) {
-              $(".toggler").removeClass("open");
-              $("body").removeClass("navbar-open");
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+                slidesToScroll: 1,
+                autoplaySpeed: 2000,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+                  slidesToShow: 4
+              }
+          },
+          {
+              breakpoint: 768,
+              settings: {
+                slidesToScroll: 1,
+                autoplaySpeed: 2000,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+                  slidesToShow: 3
+              }
+          },
+          {
+            breakpoint: 568,
+            settings: {
+              slidesToScroll: 1,
+              autoplaySpeed: 2000,
+              prevArrow: $('.prev'),
+              nextArrow: $('.next'),
+                slidesToShow: 2
             }
-        });
-
-        
-        $(".toggler").on("click", function() {
-            $(this).toggleClass("open");
-            $("body").toggleClass("navbar-open");
-        });
-        $(".nav-links a").on("click", function() {
-            if($("body").hasClass("navbar-open")) {
-              $(".toggler").removeClass("open");
-              $("body").removeClass("navbar-open");
-            }
-        });
+        }
+      ]
+             });    
+             
+       $('.testimonials').slick({
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              arrows:false,
+        responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows:false,
+                  slidesToShow: 2
+              }
+          },
+          {
+              breakpoint: 568,
+              settings: {
+                slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              arrows:false,
+                  slidesToShow: 1
+              }
+          }
+        ]
+                   });
+});
+// $(".toggler").on("click", function() {
+//   $(this).toggleClass("open");
+//   $("body").toggleClass("navbar-open");
+// });
+// $(".nav-links a").on("click", function() {
+//   if($("body").hasClass("navbar-open")) {
+//     $(".toggler").removeClass("open");
+//     $("body").removeClass("navbar-open");
+//   }
+// });
